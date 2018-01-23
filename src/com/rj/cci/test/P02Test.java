@@ -14,7 +14,8 @@ class P02Test {
         Assertions.assertEquals(0, P02.numberNeeded("aaaaaaa", "aaaaaaa"));
     }
 
+    @Test
     void test2() {
-        assertEquals(2, P02.numberNeeded("abcde", "edboa"));
+        assertEquals(2, P02.numberNeeded("", "edboa"));
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Uber {
 
-    public int consecutive(long num) {
+    public static int consecutive(long num) {
         int count = 0;
         long start = 1, end = 1;
         long sum = 1;
