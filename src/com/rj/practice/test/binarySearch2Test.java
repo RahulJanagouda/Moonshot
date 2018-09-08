@@ -1,4 +1,4 @@
-package com.rj.practice.src.test;
+package com.rj.practice.test;
 
 import com.rj.practice.src.BinarySearch_2;
 import org.junit.jupiter.api.Assertions;

@@ -17,7 +17,7 @@ public class BinarySearch {
         }
     }
 
-    public static int foHelper(int[] a) {
+    public static int findOffsetHelper(int[] a) {
         return fo(a, 0, a.length - 1);
     }
 

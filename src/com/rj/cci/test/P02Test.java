@@ -16,6 +16,6 @@ class P02Test {
 
     @Test
     void test2() {
-        assertEquals(2, P02.numberNeeded("", "edboa"));
+        assertEquals(5, P02.numberNeeded("", "edboa"));
     }
 }

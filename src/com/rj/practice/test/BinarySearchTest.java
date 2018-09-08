@@ -1,4 +1,4 @@
-package com.rj.practice.src.test;
+package com.rj.practice.test;
 
 import com.rj.practice.src.BinarySearch;
 import org.junit.jupiter.api.Assertions;
@@ -22,6 +22,6 @@ class BinarySearchTest {
     @Test void test9() { assertEquals(-1, BinarySearch.bsHelper(9, new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8})); }
     @Test void test90() { assertEquals(8, Arrays.binarySearch(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8},8)); }
 
-    @Test void testFo() { assertEquals(4, BinarySearch.foHelper(new int[]{3,4,5,6,7,1,2,3,4,5,6,7}));}
-    @Test void testFoo() { assertEquals(2, BinarySearch.foHelper(new int[]{7 ,8 ,9 ,1 ,2 ,3 ,4 ,5 ,6}));}
+    @Test void testFo() { assertEquals(4, BinarySearch.findOffsetHelper(new int[]{3,4,5,6,7,1,2,3,4,5,6,7}));}
+    @Test void testFoo() { assertEquals(2, BinarySearch.findOffsetHelper(new int[]{7 ,8 ,9 ,1 ,2 ,3 ,4 ,5 ,6}));}
 }
