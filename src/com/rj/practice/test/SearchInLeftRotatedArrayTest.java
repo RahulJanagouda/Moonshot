@@ -26,5 +26,6 @@ class SearchInLeftRotatedArrayTest {
         assertEquals(8, SearchInLeftRotatedArray.bestCaseSearch(new int[]{3, 4, 5, 6, 7, 8, 9, 1, 2}, 2));
         assertEquals(7, SearchInLeftRotatedArray.bestCaseSearch(new int[]{3, 4, 5, 6, 7, 8, 9, 1, 2}, 1));
         assertEquals(-1, SearchInLeftRotatedArray.bestCaseSearch(new int[]{3, 4, 5, 6, 7, 8, 9, 1, 2}, 19));
+        assertEquals(4, SearchInLeftRotatedArray.bestCaseSearch(new int[]{2,2,2,3,4, 2}, 4));
     }
 }

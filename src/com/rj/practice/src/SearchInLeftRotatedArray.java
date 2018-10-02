@@ -1,7 +1,18 @@
 package com.rj.practice.src;
 
+import java.util.Comparator;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
+
 public class SearchInLeftRotatedArray {
     public static int worstCaseSearch(int[] a, int key) {
+        TreeMap<Coin,String> treeMap = new TreeMap<>(new Comparator<Coin>() {
+            @Override
+            public int compare(Coin o1, Coin o2) {
+                return o1.value.compareTo(o2.value);
+            }
+        });
+        LinkedHashMap<Integer,String>linkedHashMap = new LinkedHashMap<>();
         for (int i = 0; i < a.length; i++) {
             if (a[i] == key)
                 return i;

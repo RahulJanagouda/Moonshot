@@ -2,6 +2,9 @@ package com.rj.datastructures.src.tree;
 
 import com.rj.microsoft.src.Solution;
 
+import java.util.Queue;
+import java.util.Stack;
+
 public class BinaryTree {
 
     private BinaryTreeNode root;
@@ -89,6 +92,25 @@ public class BinaryTree {
             sb.append(root.getData());
         }
         return sb;
+    }
+
+    public static void printLineByLineBinaryTree(BinaryTreeNode root){
+        Stack<String> stack = new Stack<>();
+        printHelper(root, stack);
+    }
+
+    private static void printHelper(BinaryTreeNode n, Stack<String> stack) {
+        if(n==null) return;
+
+        stack.push(n.getData()+"");
+
+        if(n.getLeft() == null && n.getRight() == null){
+            System.out.println(stack);
+        }
+
+        printHelper(n.getLeft(), stack);
+        printHelper(n.getRight(), stack);
+        stack.pop();
     }
 
 
