@@ -1,7 +1,5 @@
 package com.rj.cci.src;
 
-import com.sun.org.apache.xml.internal.utils.Trie;
-
 import java.util.Scanner;
 
 public class P07 {

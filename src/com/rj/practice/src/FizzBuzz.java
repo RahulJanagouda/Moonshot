@@ -1,7 +1,5 @@
 package com.rj.practice.src;
 
-import sun.text.normalizer.CharTrie;
-import sun.text.normalizer.Trie;
 
 public class FizzBuzz {
     public static void main(String[] a) {
